@@ -2,15 +2,14 @@ from django.urls import path
 from . import views 
 
 urlpatterns = [
-    path('', views.inicio,name='inicio'),
-    path('pagina1',views.pagina1,name='pagina1'),
+    path('base', views.inicio,name='inicio'),
     
     path('artista',views.artista,name='artista'),
     path('artista/add',views.addartista,name='artista-add'),
-    path('artista/edit',views.editarartista, name='edit-artista'),
+    path('artista/edit',views.editarartista, name='artista-edit'),
 
     path('genero',views.genero,name='genero'),
     path('genero/add',views.addgenero,name='genero-add'),
-    path('genero/edit',views.editargenero, name='edit-genero')
+    path('genero/edit',views.editargenero, name='genero-edit')
 ]
 
