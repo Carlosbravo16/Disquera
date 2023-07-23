@@ -10,6 +10,10 @@ urlpatterns = [
 
     path('genero',views.genero,name='genero'),
     path('genero/add',views.addgenero,name='genero-add'),
-    path('genero/edit',views.editargenero, name='genero-edit')
+    path('genero/edit',views.editargenero, name='genero-edit'), 
+
+    path('album',views.album,name='album'),
+    path('album/add',views.addalbum,name='album-add'),
+    path('album/edit',views.editalbum,name='album-edit'),
 ]
 
