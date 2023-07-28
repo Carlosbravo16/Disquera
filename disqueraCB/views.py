@@ -25,3 +25,10 @@ def addalbum(request):
     return render(request, 'albunes/crear.html')
 def editalbum(request):
     return render(request, 'albunes/editar.html')
+
+def disquera(request):#Vista inicio disquera
+    return render(request, 'disqueras/index.html')
+def adddisquera(request):
+    return render(request, 'disqueras/crear.html')
+def editdisquera(request):
+    return render(request, 'disqueras/editar.html')

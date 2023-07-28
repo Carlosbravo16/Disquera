@@ -15,5 +15,10 @@ urlpatterns = [
     path('album',views.album,name='album'),
     path('album/add',views.addalbum,name='album-add'),
     path('album/edit',views.editalbum,name='album-edit'),
+
+    
+    path('disquera', views.disquera, name='disquera'),
+    path('disquera/add', views.adddisquera, name='disquera-add'),
+    path('disquera/edit', views.editdisquera, name='disquera-edit'),
 ]
 
