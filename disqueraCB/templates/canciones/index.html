@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block title %} Disqueras | Canciones {% endblock  %}
+
+{% block contenido %}
+
+<h1 class='text-center'> Canciones </h1>
+<a href="{% url 'cancion-add' %}" class="btn btn-primary" style="margin-bottom:0.3rem"><i class="bi bi-plus-circle"> Resgistrar Canciones</i></a>
+<div class="table-responsive" style="margin:1rem 5rem; border-radius:5px;">
+    <table class="table">
+        <thead class='table-dark'>
+            <tr>
+                <th>ID <br> Canción</th>
+                <th>Nombre <br> Canción</th>
+                <th>Duracción <br> Canción</th>
+                <th>Estado <br> Cancción</th>
+                <th>Álbum</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+
+        <tbod class=''>
+            <td>ID <br> Canción</td>
+            <td>Nombre <br> Canción</td>
+            <td>Duracción <br> Canción</td>
+            <td>Estado <br> Cancción</td>
+            <td>Álbum</td>
+            <td>
+                <a href='{% url 'cancion-edit' %}' class='btn btn-warning'><i class="bi bi-pencil">Editar</i></a>
+                <a href='' class='btn btn-danger'><i class="bi bi-trash">Eliminar</i></a>
+            </td>
+        </tbody>
+    </table>
+
+</div>
+
+{% endblock  %}

@@ -20,18 +20,22 @@
                 <th>Acciones</th>
             </tr>
         </thead>
+        
 
-        <tbod class=''>
-            <td>ID</td>
-            <td>Nit <br> Disquera</td>
-            <td>Nombre <br> Disquera</td>
-            <td>Teléfono <br> Disquera</td>
-            <td>Dirección <br> Disquera</td>
-            <td>Estado <br> Disquera</td>
+        <tbod class='text-center'>
+        {% for d in disqueras %}
+            <td>{{d.id}}</td>
+            <td>{{d.nitdisquera}}</td>
+            <td>{{d.nombredisquera}}</td>
+            <td>{{d.telefonodisquera}}</td>
+            <td>{{d.direcciondisquera}}</td>
+            <td>{{d.estadodisquera}}</td>
+            
             <td>
                 <a href='{% url 'disquera-edit' %}' class='btn btn-warning'><i class="bi bi-pencil">Editar</i></a>
                 <a href='' class='btn btn-danger'><i class="bi bi-trash">Eliminar</i></a>
             </td>
+        {% endfor %}
         </tbody>
     </table>
 

@@ -21,7 +21,16 @@
             </tr>
         <thead>
         <tbody class="text-center">
-            <th>ID</th>
+        {% for a in artistas %}
+        <tr>
+            <td>{{a.id}}</td>
+            <td>{{a.nombreArtistico}}</td>
+            <td>{{a.nombreArtista}}</td>
+            <td>{{a.apellidoArtista}}</td>
+            <td>{{a.iddisquerafk}}</td>
+            <td>{{a.estadoArtista}}</td>
+            
+            <td>ID</td>
             <td>Foto</td>
             <td>Nombre <br>Artistico</td>
             <td>Nombre</td>
@@ -32,8 +41,8 @@
                 <a href=""  class="btn btn-warning"><i class="bi bi-pencil"></i>Editar</a>
                 <a href="" class="btn btn-danger"><i class="bi bi-trash"></i>Eliminar</a>
             </td>
+        {% endfor %}
         </tbody>
-
     </table>
 </div>
 {% endblock  %}
