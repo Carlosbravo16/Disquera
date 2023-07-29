@@ -27,5 +27,5 @@ urlpatterns = [
     path('canciones/add', views.addcancion, name='cancion-add'),
     path('canciones/edit', views.editcancion, name='cancion-edit'),
 
-]+static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
+]+ static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
 

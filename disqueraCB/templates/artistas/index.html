@@ -24,19 +24,13 @@
         {% for a in artistas %}
         <tr>
             <td>{{a.id}}</td>
+            <td><img src="{{a.fotoArtista.url}}" width="100px" heith="100px" class="rounded-circle"></td>
             <td>{{a.nombreArtistico}}</td>
             <td>{{a.nombreArtista}}</td>
             <td>{{a.apellidoArtista}}</td>
             <td>{{a.iddisquerafk}}</td>
             <td>{{a.estadoArtista}}</td>
             
-            <td>ID</td>
-            <td>Foto</td>
-            <td>Nombre <br>Artistico</td>
-            <td>Nombre</td>
-            <td>Apellido</td>
-            <td>Disquera</td>
-            <td>Estado</td>
             <td>  
                 <a href=""  class="btn btn-warning"><i class="bi bi-pencil"></i>Editar</a>
                 <a href="" class="btn btn-danger"><i class="bi bi-trash"></i>Eliminar</a>

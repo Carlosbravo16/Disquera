@@ -22,7 +22,7 @@ class Artista(models.Model):
     nombreArtistico=models.CharField(max_length=50)
     fNacimArtist=models.DateField(null=True,blank=True)
     emailArtista=models.CharField(max_length=100)
-    fotoArtista=models.CharField(max_length=255)
+    fotoArtista=models.ImageField(upload_to='imagenes/',null=True,blank=True)
     iddisquerafk=models.ForeignKey(Disquera,on_delete=models.CASCADE)
     estadoArtista=models.BooleanField()
 

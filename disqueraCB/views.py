@@ -9,7 +9,7 @@ def inicio(request):#vista1
 
 def artista(request):#vista inicio artistas
     artistas=Artista.objects.all()
-    return render(request, 'artistas/index.html',{'artista':artista})
+    return render(request, 'artistas/index.html',{'artistas':artistas})
 def addartista(request):
     return render(request, 'artistas/crear.html')
 def editarartista(request):
